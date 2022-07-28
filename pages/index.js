@@ -91,6 +91,14 @@ export default function Home(){
     }
   }
 
+  /*function startcheck() {
+    if (currentAccount) {
+      setInterval(checknft(), 5000)
+    }
+  }
+
+  startcheck()*/
+
   return (
     <div className={style.wrapper}>
       <div className={style.header}>
