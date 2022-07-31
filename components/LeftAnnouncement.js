@@ -1,6 +1,6 @@
 
 const style = {
-    wrapper : `flex flex-col items-center bg-[#0F0F0F] w-2/6 h-fit`,
+    wrapper : `flex flex-col items-center bg-[#0F0F0F] xl:w-2/6 ld:w-2/6 md:w-full sm:w-full xs:w-full h-fit`,
     title: `font-specialelite text-2xl my-6`,
     paragraphA: `font-specialelite text-xl text-justify my-6 mx-16`
 }

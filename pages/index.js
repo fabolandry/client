@@ -5,8 +5,6 @@ import ProjectDescription from '../components/ProjectDescription';
 import {useState} from 'react';
 import {ethers} from 'ethers';
 import  projectNemesis from '../../artifacts/contracts/ProjectNemesis.sol/ProjectNemesis.json';
-
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -21,21 +19,20 @@ const style = {
   header: `flex md:flex-row lg:flex-row xl:flex-row sm:flex-col xs:flex-col xl:justify-between 
   lg:justify-between md:justify-between sm:items-center xs:items-center text-white`,
 
-  headerLeft: `flex flex-row lg:ml-16 sm:mx-16 xs:mx-16 mt-10`,
+  headerLeft: `flex flex-row lg:ml-20 md:ml-20 sm:mx-16 xs:mx-16 mt-10`,
 
   headerRight: `flex flex-row items-center justify-center lg:mr-20 sm:mx-20 xs:mx-20 mt-10 border-2 border-white 
   w-auto h-12 font-specialelite lg:text-2xl sm:text-xl xs:text-xl px-3 rounded-lg bg-white text-black`,
 
   headerTitle: `font-specialelite lg:text-4xl sm:text-xl xs:text-xl mt-6 ml-6`,
 
-  projectDescription : `flex flex-row`,
-
-  launchpadCommunications : `flex flex-row justify-around mt-28 w-screen h-auto`,
+  launchpadCommunications : `flex md:flex-row lg:flex-row xl:flex-row sm:flex-col xs:flex-col xl:justify-around 
+  lg:justify-around md:justify-around sm:items-center xs:items-center mt-28 w-screen h-auto`,
 
   footer: `flex flex-row self-center justify-center border-t mt-12 w-8/12 h-auto`,
 
-  carousel: `flex flex-row mx-24`,
-  
+  carousel: `flex flex-row mx-22`,
+
   slide: `flex flex-row justify-center`
 }
 

@@ -6,7 +6,7 @@ const projectNemesisAddress = "0x547A0E069e770275F4Fcf2EBdB456788FDE32933";
 const mintAmount = 1;
 
 const style = {
-    wrapper : `flex flex-col truncate items-center border-2 border-white w-1/2`,
+    wrapper : `flex flex-col truncate items-center border-2 border-white xl:w-1/2 lg:w-1/2 md:w-full sm:w-full xs:w-full`,
     title : `font-specialelite text-3xl mt-3 mb-1`,
     message : `font-mono italic text-sm text-green-500 mt-2 mb-2 animate-pulse w-9/12 h-1/6 text-center`,
     nftline: `flex flex-row justify-around w-full h-full`,

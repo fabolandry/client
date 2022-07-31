@@ -1,9 +1,9 @@
 
 const style = {
-    wrapper : `flex flex-col items-center border-2 border-white w-1/2`,
+    wrapper : `flex flex-col items-center border-2 border-white xl:w-1/2 lg:w-1/2 md:w-full sm:w-full xs:w-full`,
     picture : `border-2 border-white w-fit h-fit m-5`,
     title : `font-specialelite text-4xl`,
-    downloads : `flex flex-row`,
+    downloads : `flex xl:flex-row lg:flex-row md:flex-col sm:flex-col xs:flex-col`,
     downloadbutton : `bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center m-10`,
     paragraphA: `font-specialelite text-xl text-justify my-6 mx-16`,
     paragraphB: `font-specialelite text-sm text-justify my-3 mx-10`
