@@ -6,17 +6,37 @@ import {useState} from 'react';
 import {ethers} from 'ethers';
 import  projectNemesis from '../../artifacts/contracts/ProjectNemesis.sol/ProjectNemesis.json';
 
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper';
+
+
 const projectNemesisAddress = "0x547A0E069e770275F4Fcf2EBdB456788FDE32933";
 
 const style = {
   wrapper: `flex flex-col h-screen w-screen bg-black text-white overflow-scroll scrollbar-hide`,
-  header: `flex flex-row justify-between text-white`,
-  headerLeft: `flex flex-row ml-16 mt-10`,
-  headerRight: `flex flex-row items-center mr-20 mt-10 border-2 border-white w-auto h-12 font-specialelite text-2xl px-3 rounded-lg bg-white text-black`,
-  headerTitle: `font-specialelite text-4xl mt-6 ml-6`,
-  projectDescription : `flex flex-row self-center border-2 border-white mt-28 w-8/12 h-auto`,
+
+  header: `flex md:flex-row lg:flex-row xl:flex-row sm:flex-col xs:flex-col xl:justify-between 
+  lg:justify-between md:justify-between sm:items-center xs:items-center text-white`,
+
+  headerLeft: `flex flex-row lg:ml-16 sm:mx-16 xs:mx-16 mt-10`,
+
+  headerRight: `flex flex-row items-center justify-center lg:mr-20 sm:mx-20 xs:mx-20 mt-10 border-2 border-white 
+  w-auto h-12 font-specialelite lg:text-2xl sm:text-xl xs:text-xl px-3 rounded-lg bg-white text-black`,
+
+  headerTitle: `font-specialelite lg:text-4xl sm:text-xl xs:text-xl mt-6 ml-6`,
+
+  projectDescription : `flex flex-row`,
+
   launchpadCommunications : `flex flex-row justify-around mt-28 w-screen h-auto`,
-  footer: `flex flex-row self-center justify-center border-t mt-12 w-8/12 h-auto`
+
+  footer: `flex flex-row self-center justify-center border-t mt-12 w-8/12 h-auto`,
+
+  carousel: `flex flex-row mx-24`,
+  
+  slide: `flex flex-row justify-center`
 }
 
 export default function Home(){
@@ -110,32 +130,70 @@ export default function Home(){
         <ConnectWallet connectWalletHandler={connectWalletHandler} currentAccount={currentAccount} setcurrentAccount={setcurrentAccount}  />
         </div>
       </div>
-      <ProjectDescription 
-      isSold0={isSold0} 
-      setIsSold0={setIsSold0}
-      isSold1={isSold1} 
-      setIsSold1={setIsSold1}
-      isSold2={isSold2} 
-      setIsSold2={setIsSold2}
-      isSold3={isSold3} 
-      setIsSold3={setIsSold3}
-      isSold4={isSold4} 
-      setIsSold4={setIsSold4}
-      isSold5={isSold5} 
-      setIsSold5={setIsSold5}
-      isSold6={isSold6} 
-      setIsSold6={setIsSold6}
-      isSold7={isSold7} 
-      setIsSold7={setIsSold7}
-      isSold8={isSold8} 
-      setIsSold8={setIsSold8}
-      isSold9={isSold9} 
-      setIsSold9={setIsSold9}
-      isSold10={isSold10} 
-      setIsSold10={setIsSold10}
-      isSold11={isSold11} 
-      setIsSold11={setIsSold11}
-      />
+        <div className={style.carousel}>
+            <Swiper
+              modules={[Navigation]}
+              slidesPerView={1}
+              navigation={true}
+            >
+              <SwiperSlide className={style.slide}>
+                  <ProjectDescription 
+                  isSold0={isSold0} 
+                  setIsSold0={setIsSold0}
+                  isSold1={isSold1} 
+                  setIsSold1={setIsSold1}
+                  isSold2={isSold2} 
+                  setIsSold2={setIsSold2}
+                  isSold3={isSold3} 
+                  setIsSold3={setIsSold3}
+                  isSold4={isSold4} 
+                  setIsSold4={setIsSold4}
+                  isSold5={isSold5} 
+                  setIsSold5={setIsSold5}
+                  isSold6={isSold6} 
+                  setIsSold6={setIsSold6}
+                  isSold7={isSold7} 
+                  setIsSold7={setIsSold7}
+                  isSold8={isSold8} 
+                  setIsSold8={setIsSold8}
+                  isSold9={isSold9} 
+                  setIsSold9={setIsSold9}
+                  isSold10={isSold10} 
+                  setIsSold10={setIsSold10}
+                  isSold11={isSold11} 
+                  setIsSold11={setIsSold11}
+                  />
+              </SwiperSlide>
+              <SwiperSlide className={style.slide}>
+                  <ProjectDescription 
+                  isSold0={isSold0} 
+                  setIsSold0={setIsSold0}
+                  isSold1={isSold1} 
+                  setIsSold1={setIsSold1}
+                  isSold2={isSold2} 
+                  setIsSold2={setIsSold2}
+                  isSold3={isSold3} 
+                  setIsSold3={setIsSold3}
+                  isSold4={isSold4} 
+                  setIsSold4={setIsSold4}
+                  isSold5={isSold5} 
+                  setIsSold5={setIsSold5}
+                  isSold6={isSold6} 
+                  setIsSold6={setIsSold6}
+                  isSold7={isSold7} 
+                  setIsSold7={setIsSold7}
+                  isSold8={isSold8} 
+                  setIsSold8={setIsSold8}
+                  isSold9={isSold9} 
+                  setIsSold9={setIsSold9}
+                  isSold10={isSold10} 
+                  setIsSold10={setIsSold10}
+                  isSold11={isSold11} 
+                  setIsSold11={setIsSold11}
+                  />
+              </SwiperSlide>
+            </Swiper>
+        </div>
       <div className={style.launchpadCommunications}>
         <LeftAnnouncement/>
         <RightAnnouncement/>
