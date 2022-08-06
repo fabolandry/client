@@ -4,7 +4,7 @@ import ConnectWallet from '../components/ConnectWallet';
 import ProjectDescription from '../components/ProjectDescription';
 import {useState} from 'react';
 import {ethers} from 'ethers';
-import  projectNemesis from '../../artifacts/contracts/ProjectNemesis.sol/ProjectNemesis.json';
+import  projectNemesis from '../components/ProjectNemesis.json';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';

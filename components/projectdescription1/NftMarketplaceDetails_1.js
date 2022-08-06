@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import {ethers, BigNumber} from 'ethers';
-import  projectNemesis from '../../../artifacts/contracts/ProjectNemesis.sol/ProjectNemesis.json';
+import  projectNemesis from './../ProjectNemesis.json';
 
 const projectNemesisAddress = "0x547A0E069e770275F4Fcf2EBdB456788FDE32933";
 const mintAmount = 1;
