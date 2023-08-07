@@ -16,25 +16,21 @@ const projectNemesisAddress = "0x547A0E069e770275F4Fcf2EBdB456788FDE32933";
 const style = {
   wrapper: `flex flex-col h-screen w-screen bg-black text-white overflow-scroll scrollbar-hide`,
 
-  header: `flex md:flex-row lg:flex-row xl:flex-row sm:flex-col xs:flex-col xl:justify-between 
-  lg:justify-between md:justify-between sm:items-center xs:items-center text-white`,
+  header: `flex flex-col md:flex-row justify-between items-center text-white mx-4 md:mx-20 mt-10`,
 
-  headerLeft: `flex flex-row lg:ml-20 md:ml-20 sm:mx-16 xs:mx-16 mt-10`,
+  headerRight: `flex items-center justify-center mr-4 md:mr-20 mx-4 md:mx-20 mt-10 border-2 border-white 
+  w-auto h-12 font-specialelite text-xl px-3 rounded-lg bg-white text-black`,
 
-  headerRight: `flex flex-row items-center justify-center lg:mr-20 sm:mx-20 xs:mx-20 mt-10 border-2 border-white 
-  w-auto h-12 font-specialelite lg:text-2xl sm:text-xl xs:text-xl px-3 rounded-lg bg-white text-black`,
+  headerTitle: `font-specialelite text-4xl mt-6 ml-6`,
 
-  headerTitle: `font-specialelite lg:text-4xl sm:text-xl xs:text-xl mt-6 ml-6`,
+  launchpadCommunications: `flex flex-col md:flex-row justify-around items-center mt-28 w-screen h-auto`,
 
-  launchpadCommunications : `flex md:flex-row lg:flex-row xl:flex-row sm:flex-col xs:flex-col xl:justify-around 
-  lg:justify-around md:justify-around sm:items-center xs:items-center mt-28 w-screen h-auto`,
+  footer: `flex self-center justify-center border-t mt-12 w-8/12 h-auto`,
 
-  footer: `flex flex-row self-center justify-center border-t mt-12 w-8/12 h-auto`,
+  carousel: `flex mx-4 md:mx-22`,
 
-  carousel: `flex flex-row mx-22`,
-
-  slide: `flex flex-row justify-center`
-}
+  slide: `flex justify-center`
+};
 
 export default function Home(){
   const [currentAccount, setcurrentAccount] = useState(null);
