@@ -29,7 +29,7 @@ const style = {
 
   footer: `flex flex-row self-center justify-center border-t mt-12 w-8/12 h-auto`,
 
-  carousel: `flex flex-col mx-22 md:flex-row`,
+  carousel: `sm:flex sm:flex-col mx-22 md:flex-row`,
 
   slide: `flex flex-row justify-center`
 }
