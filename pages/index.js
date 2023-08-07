@@ -14,7 +14,7 @@ import { Navigation } from 'swiper';
 const projectNemesisAddress = "0x547A0E069e770275F4Fcf2EBdB456788FDE32933";
 
 const style = {
-  wrapper: `flex flex-col h-screen w-screen bg-black text-white overflow-scroll scrollbar-hide`,
+  wrapper: `flex flex-col md:flex-row lg:flex-row xl:flex-row sm:flex-col xs:flex-col self-center mt-5 w-10/12 h-auto border-2 border-white`,
 
   header: `flex flex-row justify-between items-center text-white md:ml-20 sm:mx-16 mt-10`,
 
