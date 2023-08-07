@@ -2,7 +2,7 @@ import ProjectDetails_1 from '../components/projectdescription1/ProjectDetails_1
 import NftMarketplaceDetails_1 from '../components/projectdescription1/NftMarketplaceDetails_1';
 
 const style = {
-    wrapper : `flex md:flex-col lg:flex-row xl:flex-row sm:flex-col xs:flex-col self-center mt-28 w-10/12 h-auto border-2 border-white`,
+    wrapper : `flex md:flex-col lg:flex-row xl:flex-row sm:flex-col xs:flex-col self-center mt-28 w-10/12 h-auto border-2 border-white overflow-y-auto`,
 }
 
 

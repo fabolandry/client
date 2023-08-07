@@ -1,6 +1,6 @@
 
 const style = {
-    wrapper : `flex flex-col items-center border-2 border-white xl:w-1/2 lg:w-1/2 md:w-full sm:w-full xs:w-full`,
+    wrapper : `flex flex-col items-center border-2 border-white xl:w-1/2 lg:w-1/2 md:w-full sm:w-full xs:w-full overflow-y-auto`,
     picture : `border-2 border-white w-fit h-fit m-5`,
     title : `font-specialelite text-4xl`,
     downloads : `flex xl:flex-row lg:flex-row md:flex-col sm:flex-col xs:flex-col`,
