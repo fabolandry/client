@@ -16,21 +16,23 @@ const projectNemesisAddress = "0x547A0E069e770275F4Fcf2EBdB456788FDE32933";
 const style = {
   wrapper: `flex flex-col h-screen w-screen bg-black text-white overflow-scroll scrollbar-hide`,
 
-  header: `flex flex-col md:flex-row justify-between items-center text-white mx-4 md:mx-20 mt-10`,
+  header: `flex flex-row justify-between items-center text-white md:ml-20 sm:mx-16 mt-10`,
 
-  headerRight: `flex items-center justify-center mr-4 md:mr-20 mx-4 md:mx-20 mt-10 border-2 border-white 
-  w-auto h-12 font-specialelite text-xl px-3 rounded-lg bg-white text-black`,
+  headerLeft: `flex flex-row lg:ml-20 md:ml-20 sm:mx-16 xs:mx-16 mt-10`,
 
-  headerTitle: `font-specialelite text-4xl mt-6 ml-6`,
+  headerRight: `flex flex-row items-center justify-center lg:mr-20 sm:mx-20 xs:mx-20 mt-10 border-2 border-white 
+  w-auto h-12 font-specialelite lg:text-2xl sm:text-xl xs:text-xl px-3 rounded-lg bg-white text-black`,
 
-  launchpadCommunications: `flex flex-col md:flex-row justify-around items-center mt-28 w-screen h-auto`,
+  headerTitle: `font-specialelite lg:text-4xl sm:text-xl xs:text-xl mt-6 ml-6`,
 
-  footer: `flex self-center justify-center border-t mt-12 w-8/12 h-auto`,
+  launchpadCommunications : `flex flex-col justify-around items-center mt-28 w-screen h-auto md:flex-row lg:flex-row xl:flex-row`,
 
-  carousel: `flex mx-4 md:mx-22`,
+  footer: `flex flex-row self-center justify-center border-t mt-12 w-8/12 h-auto`,
 
-  slide: `flex justify-center`
-};
+  carousel: `flex flex-col mx-22 md:flex-row`,
+
+  slide: `flex flex-row justify-center`
+}
 
 export default function Home(){
   const [currentAccount, setcurrentAccount] = useState(null);
