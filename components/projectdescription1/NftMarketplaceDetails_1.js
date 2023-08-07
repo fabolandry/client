@@ -9,8 +9,8 @@ const style = {
     wrapper: `flex flex-col truncate items-center border-2 border-white w-full`, // Adjusted width to fit the carousel
     title: `font-specialelite text-3xl mt-3 mb-1`,
     message: `font-mono italic text-sm text-green-500 mt-2 mb-2 animate-pulse w-9/12 h-1/6 text-center`,
-    nftline: `flex flex-row justify-around w-full h-auto`, // Adjusted height to auto
-    nftcol: `flex flex-col w-1/4 h-fit`, // Adjusted width to fit the carousel, removed height
+    nftline: `flex flex-col w-full h-auto`, // Changed to column for mobile
+    nftcol: `flex flex-col w-full h-fit items-center`, // Changed to column for mobile and centered items
     picture: `border-2 border-white w-full h-auto`, // Adjusted height to auto
     downloadbutton: `bg-green-300 hover:bg-green-400 rounded py-1 text-gray-800 font-specialelite text-xs m-1 px-1`,
     footera: `font-specialelite w-fit h-fit w-11/12 text-center`,
