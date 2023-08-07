@@ -16,7 +16,7 @@ const projectNemesisAddress = "0x547A0E069e770275F4Fcf2EBdB456788FDE32933";
 const style = {
   wrapper: `flex flex-col h-screen w-screen bg-black text-white overflow-scroll scrollbar-hide`,
 
-  header: `flex flex-row justify-between items-center text-white md:ml-20 sm:mx-16 mt-10`,
+  header: `flex flex-col sm:flex-row justify-between items-center text-white md:ml-20 sm:mx-16 mt-10`,
 
   headerLeft: `flex flex-row lg:ml-20 md:ml-20 sm:mx-16 xs:mx-16 mt-10`,
 
@@ -29,7 +29,7 @@ const style = {
 
   footer: `flex flex-row self-center justify-center border-t mt-12 w-8/12 h-auto`,
 
-  carousel: `sm:flex sm:flex-col mx-22 md:flex-row`,
+  carousel: `flex flex-col sm:flex-row mx-22 md:flex-row`,
 
   slide: `flex flex-row justify-center`
 }
